@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+
+    font-family: $primary-font;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $primary-text_color;
+
+    background-color: $primary_bg-color;
+}
+
+a {
+    text-decoration: none;
+
+    color: $primary-text_color;
+
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: #656e83;
+        transition: color 0.3s ease-in-out;
+    }
+
+    &:active {
+        color: $primary-theme_color;
+        transition: color 0.1s ease-in-out;
+    }
+}
+
+ul {
+    margin: 0;
+
+    padding: 0;
+}
+
+header {
+    padding-top: 63px;
+  
+    @include tablet_1200 {
+        padding-top: 50px;
+    }
+  
+    @include tablet_668 {
+        padding-top: 54px;
+    }
+}

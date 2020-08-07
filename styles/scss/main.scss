@@ -1,1 +1,17 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/normalize';
 @import 'base/fonts';
+@import 'base/global';
+@import 'base/wrapper';
+@import 'components/title';
+@import 'components/price-card';
+@import 'components/courses-prices';
+@import 'components/courses-discount';
+@import 'components/signup-form';
+@import 'components/advantages';
+@import 'components/courses-info';
+@import 'components/form';
+@import 'components/form-field';
+@import 'components/checkbox';
+@import 'components/btn';

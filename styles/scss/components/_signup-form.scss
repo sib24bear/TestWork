@@ -1,0 +1,51 @@
+.signup__form {
+    flex-basis: 50%;
+
+    padding: 2.9em 4.23em;
+    padding-bottom: 3.15em;
+
+    background-color: $secondary-theme_color;
+    box-shadow: 0px 2px 24px rgba(168, 175, 196, 0.3);
+
+    @include tablet_1200 {
+        margin-bottom: 4em;
+        padding: 3.6em 6.1em;
+    }
+    
+    @include tablet_668 {
+        margin-bottom: 0;
+        padding: 2em 6.1em;
+    }
+
+    @include mobile_480 {
+        padding: 2em 1.2em;
+    }
+
+	@include mobile_320 {
+        padding: 1.8em 1.1em;
+    }
+}
+
+.signup__title {
+    margin: 0;
+    text-align: left;
+    font-size: 34px;
+    line-height: 40px;
+
+    @include tablet_1200 {
+        margin: 0;
+        text-align: center;
+        font-size: 38px;
+    }
+    
+    @include tablet_668 {
+        margin: 0;
+        font-size: 30px;
+    }
+
+	@include mobile_320 {
+        line-height: 38px;
+        text-align: left;
+        padding-right: 3em;
+    }
+}

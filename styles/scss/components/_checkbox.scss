@@ -1,0 +1,82 @@
+.checkbox {
+    position: absolute;
+    visibility: hidden;
+    order: 1;
+    margin-top: 1.6em;
+}
+
+.checkbox__label {
+    order: 1;
+    margin-top: 1.6em;
+}
+
+.checkbox__content {
+    position: relative;
+    display: block;
+    padding-left: 39px;
+    padding-right: 2em;
+
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.5px;
+
+    color: $primary-text_color;
+
+    @include tablet_1200 {
+        padding-right: 10em;   
+    }
+
+    @include tablet_668 {
+        padding-right: 1em; 
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+    
+        width: 24px;
+        height: 24px;
+    
+        border: 1px solid $primary-theme_color;
+    
+        cursor: pointer;
+        
+        box-sizing: border-box;
+        background-color: #FFFFFF;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 4px;
+    
+        display: none;
+        
+        width: 17px;
+        height: 15px;
+    
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='12' viewBox='0 0 15 12' fill='none'%3E%3Cpath d='M5.01027 10.8106L0.301016 6.03491C0.0242477 5.75468 0.0223409 5.29839 0.296758 5.01576C0.571174 4.73312 1.018 4.73118 1.29477 5.01141L5.47379 9.24564L12.8509 0.274851C13.1068 -0.0253972 13.5527 -0.0568768 13.8467 0.204539C14.1408 0.465955 14.1716 0.921273 13.9156 1.22152L6.04164 10.7715C5.91435 10.9219 5.73151 11.0114 5.53696 11.0187C5.32104 11.0194 5.14246 10.9444 5.01027 10.8106Z' fill='white'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+.checkbox:checked~.checkbox__content::before {
+    border-color: $primary-theme_color;
+    background-color: $primary-theme_color;
+}
+  
+.checkbox:checked~.checkbox__content::after {
+    display: block;
+}
+
+.checkbox__link {
+    color: $primary-theme_color;
+}

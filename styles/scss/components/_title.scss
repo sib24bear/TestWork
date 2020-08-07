@@ -1,0 +1,18 @@
+.title {
+    margin: 0;
+    text-align: center;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    letter-spacing: -0.5px;
+    color: $primary-title_color;
+
+    @include tablet_1200 {
+        font-size: 45px;
+	}
+
+	@include tablet_668 {
+        font-size: 38px;
+    }
+}

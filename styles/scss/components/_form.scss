@@ -1,0 +1,14 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.65em;
+    padding-right: 2.2em;
+    
+    @include tablet_1200 {
+        padding-right: 0;
+    }
+
+    @include mobile_320 {
+        margin-top: 1.25em;
+    }
+}

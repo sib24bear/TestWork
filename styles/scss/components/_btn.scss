@@ -1,0 +1,18 @@
+.submit-btn {
+    position: relative;
+    padding: 1.6em;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background-color: $primary-theme_color;
+
+    overflow: hidden;
+    border: none;
+}

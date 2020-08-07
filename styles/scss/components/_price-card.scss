@@ -1,0 +1,134 @@
+.price-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin-top: 56px;
+
+    @include tablet_1200 {
+        flex-direction: column;
+        
+        margin-top: 76px;
+	}
+
+	@include mobile_320 {
+        margin-top: 82px;
+    }
+}
+
+.price-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 1em;
+
+    @include mobile_320 {
+        margin-bottom: 0.6em;
+    }
+}
+
+.price-num {
+    position: relative;
+    font-family: "RobotoSlab-Light";
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: -2px;
+    color: $primary-price_color;
+
+    &::after {
+        content: "P";
+        display: inline-block;
+        padding-left: 5px;
+    }
+    
+    &::before {
+        content: "—";
+        position: absolute;
+        right: -5px;
+        display: block;
+        margin-top: 0.15em;
+    }
+}
+
+.old-price {
+    margin-top: 4px;
+    font-size: 38px;
+    line-height: 50px;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+}
+
+.credit-price {
+    font-family: $number-font;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 87px;
+
+    @include tablet_668 {
+        font-size: 56px;
+        line-height: 74px;
+    }
+}
+
+.current-price {
+    font-size: 50px;
+    line-height: 66px;
+
+    @include tablet_668 {
+        font-size: 40px;
+        line-height: 53px;
+    }
+}
+
+.price-desc {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    color: $primary-price_color;
+}
+
+.old-price__desc {
+    position: relative;
+    font-size: 15px;
+    line-height: 18px;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -2em;
+        left: 7%;
+        display: block;
+        width: 86%;
+        height: 2px;
+        background-color: $primary-price_color;
+    }
+}
+
+.credit-price__desc {
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 27px;
+
+    @include tablet_668 {
+        margin-top: 0;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+.current-price__desc {
+    margin-top: 4px;
+    font-size: 20px;
+    line-height: 23px;
+
+    @include tablet_668 {
+        margin-top: 0;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}

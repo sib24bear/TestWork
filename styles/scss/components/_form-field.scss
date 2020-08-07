@@ -1,0 +1,34 @@
+.form-field {
+    margin-bottom: 1em;
+}
+
+.form-field__input {
+    width: 100%;
+    padding: 0.85em 1.5em;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    border: none;
+    outline: none;
+    border: 2px solid #E6E8F0;
+}
+
+.form-field__label {
+    display: block;
+    cursor: pointer;
+
+    transform: translate(24px, -28px);
+    transition: all 0.2s linear;
+
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: -0.5px;
+
+    color: $primary-text_color;
+}

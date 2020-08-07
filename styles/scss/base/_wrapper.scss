@@ -1,0 +1,19 @@
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	@include tablet_1200 {
+		width: 770px;
+		padding: 0 30px;
+	}
+
+	@include tablet_770 {
+		width: 100%;
+		padding: 0;
+	}
+
+	@include mobile_320{
+        max-width: 320px;
+	}
+}

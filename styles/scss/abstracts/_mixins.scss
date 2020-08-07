@@ -1,0 +1,34 @@
+@mixin tablet_1200 {
+    @media (max-width: 1199.9px) {
+      @content;
+    }
+}
+// @include tablet_1200 {}
+
+@mixin tablet_770 {
+    @media (max-width: 786.9px) {
+      @content;
+    }
+}
+// @include tablet_770 {}
+
+@mixin tablet_668 {
+  @media (max-width: 667.9px) {
+    @content;
+  }
+}
+// @include tablet_668 {}
+
+@mixin mobile_480 {
+  @media (max-width: 479.9px) {
+    @content;
+  }
+}
+// @include mobile_480{}
+
+@mixin mobile_320 {
+    @media (max-width: 320px) {
+      @content;
+    }
+}
+// @include mobile_320 {}

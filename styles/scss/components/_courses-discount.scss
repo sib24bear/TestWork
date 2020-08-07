@@ -1,0 +1,63 @@
+.courses-discount {
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 110px;
+    padding-top: 22px;
+    padding-bottom: 8px;
+
+    transform: translateY(-20px);
+
+    background-color: #000000;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        display: block;
+        width: 100%;
+        border: 55px solid transparent;
+        border-top: 14px solid #000000;
+    }
+
+	@include mobile_320 {
+        transform: translateY(-53px);
+    }
+}
+
+.discount-element {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: bold;
+
+    color: $primary-price_color;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.discount-element__first {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+}
+
+.discount-element__middle {
+    margin-top: 7px;
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: -0.75px;
+}
+
+.discount-element__last {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    text-transform: lowercase;
+}
