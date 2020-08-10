@@ -10,6 +10,7 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 
 const jsFiles = [
+  './js/lib.js',
   './js/common.js',
 ];
 

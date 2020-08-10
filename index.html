@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Стоимость обучения</title>
-    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
-    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font">
-    <link rel="preload" href="fonts/RobotoSlab-Regular.woff2" as="font">
-    <link rel="preload" href="fonts/RobotoSlab-Light.woff2" as="font">
-    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/RobotoSlab-Regular.woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/RobotoSlab-Light.woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/Roboto-Regular.woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/Roboto-Bold.woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/OpenSans-Regular.woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="build/css/main.min.css">
   </head>
   <body class="page">
@@ -76,31 +76,31 @@
                 </div>
               </div>
               
-              <form class="form">
+              <form class="form" id="signUpForm" novalidate="novalidate">
                 <div class="form-field">
-                  <input class="form-field__input" id="userName" name="Имя" type="text" maxlength="15" required>
+                  <input class="form-field__input" id="userName" name="name" type="text">
                   <label class="form-field__label" for="userName">Имя</label>
                 </div>
     
                 <div class="form-field">
-                  <input class="form-field__input" id="userPhone" name="Телефон" type="tel" required>
+                  <input class="form-field__input" id="userPhone" name="phone" type="tel">
                   <label class="form-field__label" for="userPhone">Телефон</label>
                 </div>
 
                 <div class="form-field">
-                  <input class="form-field__input" id="userEmail" name="Email" type="email" required>
+                  <input class="form-field__input" id="userEmail" name="email" type="email">
                   <label class="form-field__label" for="userEmail">Email</label>
                 </div>
     
                 <label class="checkbox__label">
-                  <input class="checkbox" checked="checked" name="agree" type="checkbox">
+                  <input class="checkbox" name="agree" type="checkbox" checked>
                   <span class="checkbox__content">
                     Я согласен с условиями обработки
                     <a class="checkbox__link" href="https://skillbox.ru/privacy_policy.pdf" target="_blank">персональных данных</a>
                   </span>
                 </label>
     
-                <button class="submit-btn form__submit" type="submit">Записаться</button>
+                <button class="submit-btn form__submit" type="submit" disabled>Записаться</button>
               </form>
             </div>
         </div>
